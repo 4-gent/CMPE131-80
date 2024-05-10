@@ -23,7 +23,7 @@ def login():
 	return render_template('login.html', form=current_form)
 
 # list out flights in table
-@app.route("/flights.html", methods=['GET', 'POSTz'])
+@app.route("/flights.html", methods=['GET', 'POST'])
 def flights():
 	if request.method == 'POST':
 		# Create a new instance of Flights with the data from the request
@@ -46,5 +46,12 @@ def flights():
 
 		# Redirect to a different route or render a template
 		return redirect(url_for('index'))
+	if request.method == 'GET':
+		# Query the database for all Flights
+		flights = Flight.query.all()
+		flight = Flight.query.filter_by(id=1).first()
+
+		# Render the template with the flights
+		return render_template('flights.html', flights=flights, flight_info=flight)
 
 	return render_template('index.html')
