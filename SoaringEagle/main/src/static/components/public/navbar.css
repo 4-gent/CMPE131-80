@@ -1,0 +1,12 @@
+/* Custom CSS styles */
+body {
+    padding-top: 20px; /* Add some padding to the top of the body to avoid navbar overlap */
+}
+.navbar-brand {
+    font-size: 1.5rem; /* Increase the font size of the navbar brand */
+    font-weight: bold; /* Make the navbar brand text bold */
+}
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Increase the font size of navbar links */
+}
+

@@ -1,0 +1,24 @@
+# Web Frameworks
+Flask
+Flask-SocketIO==4.3.1
+
+# Database
+Flask-SQLAlchemy==3.0.2
+pymongo==3.11.0
+
+# Web Forms
+flask_wtf==1.2.1
+wtforms
+
+# Utilities
+werkzeug==3.0.0
+MarkupSafe>=2.1.1
+itsdangerous==2.1.2
+
+# Data Visualization
+matplotlib
+Pillow
+
+# SocketIO Dependencies
+python-engineio==3.13.2
+python-socketio==4.6.0
