@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Index File</title>
+	<link href='../static/public/receipt.css' rel='stylesheet'>
+</head>
+<body>
+    <p>
+        <img class="logo" src="../static/public/logo.jpg">
+    </p>
+    <p>
+        <div class="confirmation_page">
+            <div class="purchase_confirmation_text">
+                <h1>Purchase Confirmation</h1>
+            </div>
+            <div class="airfare">
+                <div>Airfare Fee:</div>
+                <div>${{airfare}}</div>
+            </div>    
+            <div class="baggage_fee">
+                <div>Baggage Fee:</div>
+                <div>${{baggage}}</div>
+            </div>
+            <div class="security_fee">
+                <div>Passenger Security Fee:</div>
+                <div>${{security}}</div>
+            </div>
+            <div class="tax">
+                <div>Tax (7.5%):</div>
+                <div>${{tax}}</div>
+            </div>
+            <br>
+            <div class="total">
+                <div>Total:</div>
+                <div>${{total}}</div>
+            </div>
+            <br>
+            <div class="passenger_info">
+                <div>Passenger Information:</div>
+            </div>
+            <div class="first_name">
+                <div>First Name:</div>
+                <div>{{firstName}}</div>
+            </div>
+            <div class="last_name">
+                <div>Last Name:</div>
+                <div>{{lastName}}</div>
+            </div>
+            <div class="email">
+                <div>Email:</div>
+                <div>{{email}}</div>
+            </div>
+            <a href='/'>
+                <button class="return_home">Return to Home</button>
+            </a>
+        </div>
+    </p>
+</body>
+</html>

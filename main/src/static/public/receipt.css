@@ -1,0 +1,145 @@
+.logo{
+    width: auto;
+	height: 70px;
+    position: relative;
+    left: 10px;
+}
+
+.confirmation_page{
+    border: 2px solid clear;
+    margin-left: 250px;
+    margin-right: 250px;
+	box-shadow: 0px 2px 4px 0px grey;
+    background-color: #faf9f6;
+    height: 600px;
+}
+
+
+.purchase_confirmation_text{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 17pt;
+    color: #88001b;
+}
+
+
+.airfare {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 100px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.baggage_fee{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.security_fee {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.tax {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.passenger_info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.first_name {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.last_name {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.return_home{
+    position: relative;
+    top: 75px;
+    line-height: 50px;
+    display: block;
+    margin: auto;
+    color: #faf9f6;
+    font-size: 15pt;
+    border: 2px solid clear;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    box-shadow: 0px 2px 4px 0px black;
+    background-color: #88001b;
+}
+
+
+.return_home:hover {
+    text-decoration: underline;
+}

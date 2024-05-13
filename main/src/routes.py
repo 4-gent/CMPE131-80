@@ -55,3 +55,20 @@ def flights():
 		return render_template('flights.html', flights=flights, flight_info=flight)
 
 	return render_template('index.html')
+
+@app.route("/Confirmation.html", methods=['GET', 'POST'])
+def confirmation():
+	airfare_fee = 120.00
+	baggage_fee = 10.00
+	security_fee = 20.00
+	TAX = .075
+	calculated_tax = (airfare_fee + baggage_fee + security_fee) * TAX
+
+	calculated_total = (airfare_fee + baggage_fee + security_fee + calculated_tax)
+		
+	first_name = "John"
+	last_name = "Doe"
+	email_address = "joe@gmail.com"
+
+	return render_template('receipt.html', airfare=airfare_fee, baggage=baggage_fee, security=security_fee, 
+						tax=calculated_tax, total=calculated_total, firstName=first_name, lastName=last_name, email=email_address)
