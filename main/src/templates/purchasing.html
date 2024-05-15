@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Purchasing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/public/purchasing.css" rel="stylesheet">
+</head>
+<body>
+    <a href="/index.html"><img class="logo" src="../static/public/131_logo.png"></a> <!-- Image logo -->
+    <section class="centered-box">   
+        <div class="purchasing_page">
+            <div class="purchase_text">
+                <h1>Purchasing</h1>
+            </div>
+            <form action="/purchasing" method="POST">
+                <div class="airfare">
+                    <div>{{airline}} Airfare Fee X Number of Passengers X {{trip}}:</div>
+                    <div>$120.00</div>
+                </div>    
+                <div class="baggage_fee">
+                    <div>Baggage Fee:</div>
+                    <div>$10.00</div>
+                </div>
+                <div class="security_fee">
+                    <div>Passenger Security Fee:</div>
+                    <div>$20.00</div>
+                </div>
+                <div class="tax">
+                    <div>Tax (7.5%):</div>
+                    <div>$11.25</div>
+                </div>
+                <br>
+                <div class="total">
+                    <div>Total:</div>
+                    <div>$161.25</div>
+                </div>
+                <br>
+                <div class="subsection">
+                    <div class="purchasing-container">
+                        <div class="left-subsection">
+                            <h3>Card Information</h3>
+                                <input class="input-box" type="text" id="card-name" placeholder="Name on card" name="card_name">
+                                <input class="input-box" type="text" id="card-number" placeholder="Card number" name="card_number">
+                                <div class="purchasing-row">
+                                    <input class="input-box" type="text" id="expiration-date" placeholder="Expiration mm/yy" name="card_date">
+                                    <input class="input-box input-margin" type="text" id="cvv" placeholder="CVV" name="card_cvv">
+                                </div>
+                        </div>
+                        <div class="right-subsection">
+                            <h3>Personal Information</h3>
+                                <div class="purchasing-row">
+                                    <input class="input-box" type="text" id="first-name" placeholder="First name" name="first_name">
+                                    <input class="input-box input-margin" type="text" id="last-name" placeholder="Last name" name="last_name">
+                                </div>
+                                <input class="input-box" type="email" id="email" placeholder="Email" name="email">
+                                <input class="input-box" type="text" id="mailing-address" placeholder="Mailing address" name="address">
+                        </div>
+                    </div>
+                    <img class="credit-card" src="../static/public/cards.jpg">
+                </div>
+                <button class="submit-button" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

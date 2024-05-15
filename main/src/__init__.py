@@ -14,7 +14,7 @@ app.config.from_mapping(
 db = SQLAlchemy(app)
 
 with app.app_context():
-    from src.models import Flight
+    from src.models import Flight_Booking, Passenger_Info
     db.create_all()
 
 from src import routes
