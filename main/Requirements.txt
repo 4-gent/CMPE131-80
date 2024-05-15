@@ -4,7 +4,6 @@ Flask-SocketIO==4.3.1
 
 # Database
 Flask-SQLAlchemy==3.0.2
-pymongo==3.11.0
 
 # Web Forms
 flask_wtf==1.2.1
