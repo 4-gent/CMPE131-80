@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Confirmation</title>
+    <meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title>Index File</title>
+	<link href='../static/public/receipt.css' rel='stylesheet'>
+</head>
+<body>
+    <p>
+        <a href="/index.html"><img class="logo" src="../static/public/131_logo.png"></a> <!-- Image logo -->
+    </p>
+    <p>
+        <div class="confirmation_page">
+            <div class="purchase_confirmation_text">
+                <h1>Purchase Confirmation</h1>
+                <h2>Enjoy your trip from {{origin}} to {{destination}}!!!</h2>
+            </div>
+            <div class="airfare">
+                <div>Airfare Fee X Number of Passengers X {{passenger_info.trip}}:</div>
+                <div>${{passenger_info.airefare_cost}} * {{passenger_info.passengers}} * {{passenger_info.trip_int}} ({{passenger_info.trip}})</div>
+            </div>    
+            <div class="baggage_fee">
+                <div>Baggage Fee:</div>
+                <div>${{passenger_info.baggage_cost}}</div>
+            </div>
+            <div class="security_fee">
+                <div>Passenger Security Fee:</div>
+                <div>${{passenger_info.security_cost}}</div>
+            </div>
+            <div class="tax">
+                <div>Tax (7.5%):</div>
+                <div>${{passenger_info.tax_cost}}</div>
+            </div>
+            <br>
+            <div class="total">
+                <div>Total:</div>
+                <div>${{passenger_info.total_cost}}</div>
+            </div>
+            <br>
+            <div class="passenger_info">
+                <div>Passenger Information:</div>
+            </div>
+            <div class="first_name">
+                <div>First Name:</div>
+                <div>{{passenger_info.first_name}}</div>
+            </div>
+            <div class="last_name">
+                <div>Last Name:</div>
+                <div>{{passenger_info.last_name}}</div>
+            </div>
+            <div class="email">
+                <div>Email:</div>
+                <div>{{passenger_info.email}}</div>
+            </div>
+            <div class="airline">
+                <div>Airline:</div>
+                <div>{{airline}}</div>
+            </div>
+            <div class="dates">
+                <div>Departure Date:</div>
+                <div>{{departure_date}}</div>
+                <div>Return Date:</div>
+                <div>{{departure_date}}</div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <a href='/' class="return_home">
+                Return Home
+            </a>
+        </div>
+    </p>
+</body>
+</html>

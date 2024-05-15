@@ -1,0 +1,173 @@
+.logo{
+	position: relative;
+	top: 0; /* 20, 20, 60 */
+	left: 20px;
+	height: 60px;
+	width: auto;
+	object-fit: contain;
+}
+
+.confirmation_page{
+    border: 2px solid clear;
+    margin-left: 250px;
+    margin-right: 250px;
+	box-shadow: 0px 2px 4px 0px grey;
+    background-color: #faf9f6;
+    height: 700px;
+
+    font: 'nunito sans', sans-serif;
+}
+
+
+.purchase_confirmation_text{
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 17pt;
+    color: #88001b;
+}
+
+
+.airfare {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-top: 100px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.baggage_fee{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.security_fee {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.tax {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.passenger_info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.first_name {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.last_name {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    margin-bottom: 3px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.airline{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.dates{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.return_home{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw;
+    height: 8vh;
+  
+    text-align: center;
+    font-size: larger;
+    font-family: 'nunito sans', sans-serif;
+    transition: 300ms;
+    background-color: #88001B;
+    color: white;
+    border-radius: 3.5px;
+    border-color: transparent;
+    box-shadow: 0px 2px 4px 0px grey;
+    text-decoration: none;
+    display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+
+.return_home:hover {
+    transition: 300ms;
+    background-color: #BF3752;
+}

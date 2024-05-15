@@ -7,3 +7,8 @@ class LoginForm(FlaskForm):
     password = PasswordField('Password', validators=[DataRequired()])
     remember_me = BooleanField('Remember Me')
     submit = SubmitField('Sign In')
+
+class FlightForm(FlaskForm):
+    origin = StringField('origin', validators=[DataRequired()])
+    destination = StringField('destinaion', validators=[DataRequired()])
+    passenger_count = StringField('passenger_count', validators=[DataRequired()])

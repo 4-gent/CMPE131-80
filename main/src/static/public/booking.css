@@ -1,0 +1,175 @@
+.booking-page{
+    display: flex;
+    flex-direction: row;
+    font-family: 'nunito sans', sans-serif;
+}
+.booking-title{
+    font-size: 6vh;
+    color: #88001B;
+}
+.booking-input{
+    border-radius: 4px;
+    border-color: transparent;
+    box-shadow: 0px 2px 4px 0px grey;
+    margin-bottom: 2vh;
+    width: 20vw;
+    height: 5vh;
+    text-decoration: none;
+    transition: 300ms;
+}
+.booking-input:hover{
+    transition: 300ms;
+    box-shadow: 0px 4px 4px 0px grey;
+}
+.booking-input:focus{
+    outline: none;
+}
+::placeholder{
+    color: #ABABAB;
+    border-bottom: 1px solid #ABABAB;
+    width: 95%;
+    opacity: 50%;
+    padding-left: 2%;
+}
+.location-section {
+    display: flex;
+    flex-direction: column;
+    width: 20%; /* Adjust the width as needed */
+    background-color: #FAF9F6;
+    box-shadow: 1px 0px 6px 0px grey;
+    height: 100%;
+    padding: 2%;
+    margin: 0;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vh;
+    text-align: center;
+}
+.checkbox{
+    appearance: none;
+    text-align: center;
+}
+.checkbox:checked + .checkbox-label {
+    background-color: #BF3752;
+}
+
+.checkbox-label {
+    background-color: #88001B;
+    width: 15vw !important;
+    height: 5vh !important;
+    font-size: 25px !important;
+}
+.checkbox:active{
+    background-color: #88001B;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.location-section-trip > .submit-button{
+    width: 10vw;
+    height: 6vh;
+    border-radius: 10px;
+}
+.logo-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90%;
+    margin-bottom: 0%;
+    width: 10vw;
+    height: auto;
+}
+.bottom-text{
+    font-weight: bold;
+}
+.date-section{
+    text-align: center;
+}
+.calendar-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    width: 74vw;
+    height: auto;
+}
+.calendar-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 75vh;
+}
+.calendar-title{
+    text-align: center;
+    font-size: 4vh;
+    font-weight: bold;
+    color: #88001B;
+}
+.calendar {
+    width: fit-content;
+    height: auto;
+}
+
+.calendar-object{
+    width: 30vw;
+    height: auto;
+}
+
+.submit-button-container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.submit-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7vw;
+    height: 5vh;
+
+    text-align: center;
+    font-size: larger;
+    font-family: 'nunito sans', sans-serif;
+    transition: 300ms;
+    background-color: #88001B;
+    color: white;
+    border-radius: 3.5px;
+    border-color: transparent;
+    box-shadow: 0px 2px 4px 0px grey;
+    text-decoration: none;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.submit-button:hover{
+    transition: 300ms;
+    background-color: #BF3752;
+}
+.submit-button:active{
+    background-color: black;
+}
+.back-button{
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    transition: 500ms;
+
+    text-decoration: none;
+    color: black;
+    font-size: 3.5vh;
+    font-weight: bold;
+    background-color: none;
+}
+.back-button:hover{
+    transition: 1000ms;
+    border-bottom: 1px solid black;
+    box-sizing: 0px 2px 3px 0px grey;
+}

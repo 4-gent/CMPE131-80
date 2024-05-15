@@ -1,25 +1,35 @@
-h1{
-	color: blue;
+html{
+	font-family: 'nunito sans', sans-serif;
 }
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px; /* set the height of the container */
+}
+
+.home-title{
+	font-size: 100px;
+	color: #88001B;
+	font-family: 'nunito sans', sans-serif;
+}
+
 .list{
 	text-decoration: none;
 	color: black;
 }
-/* added */
-* {
-	box sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
-
-body {
+.home-page{
 	font-family: Times New Roman, sans-serif;
-	background-color: red;
-	}
+	background-image:url('map_background.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
 
 .logo {
 	position: absolute;
-	top: 20px;
+	top: 20px; /* 20, 20, 60 */
 	left: 20px;
 	height: 60px;
 	width: auto;
@@ -34,25 +44,34 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: auto;
-	margin-top: 50px;
+	margin-top: 30vh;
+	margin-bottom: 30vh;
 }
 
-.center-content h1 {
-	font-size: 36px;
-	margin bottom: 20px;
-}
-
-.center-content button {
-	background-color: blue;
-	color: black;
-	padding: 10px 20px;
-	border: none;
+.start-button{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 10vw;
+	height: 8vh;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'nunito sans', sans-serif;
+	transition: 300ms;
+	background-color: #88001B;
+	color: white;
 	border-radius: 10px;
-	cursor: pointer;
+	border-color: transparent;
+	box-shadow: 0px 2px 4px 0px grey;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.center-content button:hover  {
-	background-color: black;
+.start-button:hover{
+	transition: 300ms;
+	background-color: #BF3752;
 }
 
 	
@@ -162,6 +181,7 @@ background-color: black
 /*
 additional code above this comment
 */
+/*
 .list:hover{
 	color: orange;
 }
@@ -187,3 +207,4 @@ additional code above this comment
 	width: 100px;
 	height: 400px;
 }
+*/

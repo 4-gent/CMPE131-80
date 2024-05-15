@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Booking Page</title>
+  <link href='../static/public/booking.css' rel='stylesheet'> <!-- Link to external CSS file -->
+
+  <!-- FullCalendar -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/interaction/main.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    .selected-departure-date{
+      transition: 300ms;
+      box-shadow: 0px 4px 4px 0px grey;
+      background-color: #f5678d;
+      border-color: #f5678d;
+      border-radius: 5px;
+    }
+    .selected-arrival-date{
+      transition: 300ms;
+      box-shadow: 0px 4px 4px 0px grey;
+      background-color: #69a1fa;
+      border-color: #69a1fa;
+      border-radius: 5px;
+
+    }
+  </style>
+</head>
+<body>
+  <form method="POST" action="/booking"> <!-- Form for submitting booking information -->
+  <div class="booking-page">
+      <div class="location-section"> <!-- Location section -->
+        <h1 class="booking-title">Let's Fly Somewhere</h1> <!-- Heading for the booking page -->
+        <div class="input-container">
+          <input class="booking-input" placeholder="Fly from" type="text" id="origin" name="origin"> <!-- Input field for origin -->
+          <input class="booking-input" placeholder="Fly to" type="text" id="destination" name="destination"> <!-- Input field for destination -->
+          <input class="booking-input" placeholder="How many passengers" type="text" id="passengers" name="passengers"> <!-- Input field for number of passengers -->
+          <!-- Hidden fields for calendar dates -->
+          <input type="hidden" id="start-date" name="start-date">
+          <input type="hidden" id="end-date" name="end-date">
+        </div>
+        <div class="location-section-trip">
+          <div class="checkbox-container"><!-- Container for checkboxes -->
+            <input class="checkbox" type="checkbox" id="one-way" name="trip-type" value="1" onclick="selectOnlyOneCheckbox(this)"> <!-- Checkbox for one-way trip -->
+            <label for="one-way" class="submit-button checkbox-label">One way</label> <!-- Label for one-way checkbox -->
+            <input class="checkbox" type="checkbox" id="round-trip" name="trip-type" value="2" onclick="selectOnlyOneCheckbox(this)"> <!-- Checkbox for round-trip -->
+            <label for="round-trip" class="submit-button checkbox-label">Round trip</label> <!-- Label for round-trip checkbox -->
+          </div>
+          <a href="/index.html"><img class="logo-image" src="../static/public/131_logo.png"></a> <!-- Image logo -->
+        </div>
+      </div>
+    <div class="date-section">
+      <a href="/index" class="back-button">Back</a>
+      <h1 class="booking-title">Have a date in mind?</h1> <!-- Heading for date selection -->
+      <div class="calendar">
+        <div class="calendar-row">
+          <div class="calendar-column">
+            <label class="calendar-title">Departure Date</label> <!-- Label for departure date -->
+            <div id="calendar1" class="calendar-object"></div>
+          </div>
+          <div class="calendar-column">
+            <label class="calendar-title">Arrival Date</label>
+            <div id="calendar2" class="calendar-object"></div>
+          </div>
+        </div>
+        <div class="submit-button-container">
+          <button id="next-button" class="submit-button" type="submit" value="next">Next</button> <!-- Submit button -->
+          <p class="bottom-text">Fill out all information first*</p> <!-- Bottom text -->
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+<script>
+  function selectOnlyOneCheckbox(checkbox) {
+    var checkboxes = document.getElementsByName('trip-type')
+    checkboxes.forEach((item) => {
+      if (item !== checkbox) item.checked = false
+    })
+  }
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl1 = document.getElementById('calendar1');
+    var calendar1 = new FullCalendar.Calendar(calendarEl1, {
+      initialView: 'dayGridMonth',
+      selectable: false,
+      titleFormat:{
+        year: 'numeric',
+        month: 'long',
+        date: 'numeric',
+        suffix: 'Departure Date'
+      },
+      dateClick: function(info){
+        document.getElementById('start-date').value = info.dateStr;
+        console.log(info.dateStr)
+        if(info.dayEl.classList.contains('selected-departure-date')){
+          info.dayEl.classList.remove('selected-departure-date');
+        }
+        else{
+          document.querySelectorAll('.selected-departure-date').forEach(function(el){
+            el.classList.remove('selected-departure-date');
+          })
+          info.dayEl.classList.add('selected-departure-date');
+        }
+      }
+    })
+    calendar1.render();
+
+    var calendarEl2 = document.getElementById('calendar2');
+    var calendar2 = new FullCalendar.Calendar(calendarEl2, {
+      initialView: 'dayGridMonth',
+      selectable: false,
+      titleFormat:{
+        year: 'numeric',
+        month: 'long',
+        date: 'numeric',
+        suffix: 'Arrival Date'
+      },
+      dateClick: function(info){
+        document.getElementById('end-date').value = info.dateStr;
+        console.log(info.dateStr)
+        if(info.dayEl.classList.contains('selected-arrival-date')){
+          info.dayEl.classList.remove('selected-arrival-date');
+        }
+        else{
+          document.querySelectorAll('.selected-arrival-date').forEach(function(el){
+            el.classList.remove('selected-arrival-date');
+          })
+          info.dayEl.classList.add('selected-arrival-date');
+        }
+      }
+    })
+    calendar2.render();
+  })
+</script>
+</body>
+</html>

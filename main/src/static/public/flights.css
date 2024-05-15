@@ -1,0 +1,106 @@
+.content {
+    background-size: cover;
+    background-position: center center; 
+    font: 'nunito sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.header {
+    text-align: center;
+    color: #880016;
+    font-size: 25px;
+}
+.logo {
+	position: absolute;
+	top: 20px; /* 20, 20, 60 */
+	left: 0px;
+	height: 60px;
+	width: auto;
+	object-fit: contain;
+}
+.background-banner{
+    margin-top: 10vh;
+    left: 0 !important;
+    width: 98.7vw;
+    height: auto;
+}
+.airline-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faf9f6;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 16px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    margin-bottom: 25px;       
+}
+
+.airline-name {
+    text-align: left;
+    flex-grow: 1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.airline-price {
+    margin-right: 20px;  
+    font-weight: bold;
+}
+
+.choose-btn {
+    padding: 10px 20px;
+    background-color: #88001b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.choose-btn:hover {
+    transition: 300ms;
+    background-color: #BF3752;
+}
+
+.header {
+    text-align: center;
+    color: #88001b;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+}
+
+.back-btn {
+    position: fixed;
+    top: 25px;
+    right: 0;
+    
+    transition: 500ms;
+
+    text-decoration: none;
+    color: black;
+    font-size: 3.5vh;
+    font-weight: bold;
+    background-color: none;
+}
+
+.back-btn:hover {
+    background-color: #700017; 
+}
+
