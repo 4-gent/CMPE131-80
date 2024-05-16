@@ -10,20 +10,21 @@ We have implemented 6 functional requirements:
 
 1. **Choosing a destination** (Marlon/Alan)
 2. **Showing a calendar** (Marlon)
-3. **Choosing an airline** (Alan)
-4. **Calculating pricing** (Pawan/Mihir)
-5. **Getting passenger/payment information** (Mihir)
-6. **Confirming booking** (Pawan)
+3. **Choosing an airline** (Alan/Marlon)
+4. **Calculating pricing** (Pawan/Mihir/Marlon)
+5. **Getting passenger/payment information** (Mihir/Marlon)
+6. **Confirming booking** (Pawan/Marlon)
 
 ## Installation
 
 To install our libraries:
 
 1. Open command terminal
-2. Type `git commit https://github.com/4-gent/SoaringEagle.git`
-3. Then to install our requirements, type `pip3 install -r Requirements.txt`
-4. Run `run.py` in the main directory by typing `python3 run.py`
-5. To run our webpage, either copy/paste the URL provided after running the previous command in a browser or type `localhost:5000` to access our homepage.
+2. Type `git clone https://github.com/4-gent/SoaringEagle.git`
+3. Navigate to `/pathto/SoaringEagle/main/`
+4. Then to install our requirements, type `pip3 install -r Requirements.txt`
+5. Run `run.py` in the `/pathto/SoaringEagle/main/` directory by typing `python3 run.py`
+6. To access the webpage, either copy/paste the URL provided after running the previous command in a browser or type `localhost:5000/` to access our homepage.
 
 ## Pages
 
@@ -38,10 +39,8 @@ Our pages included:
 
 The technologies used include libraries. These span web frameworks, database, web forms, utilities, data visualization, and SocketIO dependencies. Their respective uses were:
 
-- Flask-SocketIO
 - Flask-SQLAlchemy
 - flask_wtf
 - werkzeug/MarkupSafe/itsdangerous
 - matplotlib
 - Pillow
-- python-engineio/python-socketio.
